@@ -1,18 +1,24 @@
 #include <iostream>
-#include "Tipos.h"
 using namespace std;
 
 int main() {
-
-entero numero;
-caracter crt;
-
-cout << "ingrese el caracter:";
-cin >> crt;
-cout << "\ningrese el numero:";
-cin >> numero;
-
-// ToDO
-// implemente el algoritmo.
+  int total=0, pares=0, impares=0;
+  int num= -1;
+  
+  while (num != 0 ){
+    cout <<"ingresar los numeros: \n";
+    cin>> num;
+    if (num!=0)
+      total++;
+      if (num%2==0){
+      pares++;
+      }
+      else{
+      impares++;
+      }
+  }
+  cout << "total de numero "<<total<<" los cuales "<<pares-1<<" son pares y "<<impares<<" son impares\n";
+  
   return 0;
 }
+
